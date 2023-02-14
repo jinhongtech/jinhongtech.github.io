@@ -2,6 +2,10 @@
 title: "코딩테스트"
 layout: archive
 permalink: /CT
+author_profile: true
+sidebar_main: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 
