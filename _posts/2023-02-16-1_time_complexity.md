@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "1. 알고리즘 시간복잡도"
+title: "알고리즘 시간복잡도"
 categories: 
   - DA
 ---
