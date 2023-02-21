@@ -16,7 +16,7 @@ categories:
     - 탐색(search)
     - 제너레이터(generator)
 
-<img src="/images/linkedlist1.png" width="50%" height="50%">
+<img src="/images/linkedlist1.png" width="90%" height="90%">
 
 
 ```python
@@ -36,7 +36,7 @@ b.next = c
 			
 ```
 
-<img src="/images/linkedlist2.png" width="50%" height="50%">
+<img src="/images/linkedlist2.png" width="100%" height="100%">
 
 
 ```python
@@ -121,5 +121,110 @@ class SinglyLinkedList:
 ## 양방향 연결리스트(Doubly Linked List)
 
 - 한방향 연결리스트: tail node를 지울 때 tail node를 알고 있어도 tail node 직전에 있는 prev node를 알아야한다.(prev node의 링크가 더이상 tail node를 가리키면  안되기 때문 또한 tail node 를 알아도 prev node를 알 수 없기 때문에 head node부터 다시 찾아야함)
+- 노드(key값 + next link + prev link)
+- 한방향 연결리스트에 비해서 한 노드에 사용되는 메모리가 증가하지만 특정 위치의 노드를 삭제하거나 추가할 때 시간복잡도가 줄어든다.
 
-<img src="/images/linkedlist3.png" width="50%" height="50%">
+<img src="/images/linkedlist3.png" width="100%" height="100%">
+
+### 원형 양방향 연결리스트(Circularly Doubly Linked List)
+
+- 기존 양방향 연결리스트에 비해 삽입 삭제 연산들이 간단해진다.
+
+<img src="/images/linkedlist4.png" width="100%" height="100%">
+
+
+- 원형연결리스트의 시작을 표기하기 위해 빈리스트 dummy node를 사용한다.
+    
+<img src="/images/linkedlist5.png" width="100%" height="100%">
+
+    
+
+```python
+class Node: #새로운 노드 생성
+	def __init__(self, key=None):
+		self.key =key
+		self.next = self
+		self.prev = self
+
+class DoublkyLinkedList:
+	def __init__(self):
+		self.head = Node()
+		self.size = 0
+
+	def __iter__(): #generator
+	def __str__(): #print 가능하게
+	def __len__(): #len
+
+  #splice 연산: 연결리스트 안에 있는 a에서 b까지의 노드를 잘라서 x노드 뒤에 붙이는 연산
+	#조건1: a -> ... -> b
+	#조건2: a와 b사이에 head가 없어야됨
+	def splice(self, a, b, x):
+		ap = a.prev
+		bn = b.next
+		xn = x.next
+		#a~b cut
+		ap.next = bn
+		bn.prev = ap
+		#x뒤에 a~b 붙이기
+		xn.next = a
+		a.prev = x
+		b.next = xn
+		xn.prev = b
+
+	#splice를 통해서 다음 함수를 구현가능
+	def moveAfter(self,a,x):
+		splice(a,a,x)
+	def moveBefore(self,a,x):
+		splice(a,a,x.prev)
+	def insertAfter(x,key):
+		moveAfter(Node(key),x)
+	def insertBefore(x,key):
+		moveBefore(Node(key), x)
+	def pushFront(key):
+		insertAfter(self.head, key)
+	def pushBack(key):
+		insertBefore(self.head, key)
+
+	#탐색
+	def search(self,key):
+		v = self.head #dummy node
+		while v.next != self.head:
+			if v.key == key:
+				return v
+			v = v.next
+		return None
+
+	#삭제
+	def remove(x): # x 노드 삭제
+		if x == None or x == self.head:
+			return None
+		xp = x.prev
+		xn = x.next
+		xp.next = xn
+		xn.prev = xp
+		del x
+
+	def popFront(): #head node 의 next node를 제거
+		if len(self) == 0:
+			return None
+		remove(self.head.next)
+
+	def popBack(): #head node의 prev node를 제거
+		...
+
+	#join 함수: 두연결리스트 하나로 합치기
+	#split 함수: 한 연결리스트를 특정 노드를 기준으로 split
+```
+
+- splice 연산 그림
+
+<img src="/images/linkedlist6.png" width="100%" height="100%">
+
+
+- 시간복잡도
+    - search(key): O(n)
+    - splice(a,b,x): O(1) → 6개의 링크만 수정해주면 되기 때문에
+    - splice로 구현된 함수들: O(1)
+    - remove(x): O(1)
+
+    
