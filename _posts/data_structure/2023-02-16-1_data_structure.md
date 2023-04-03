@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "알고리즘 시간복잡도"
+title: "01.알고리즘 시간복잡도"
 categories: 
   - DA
 ---
 
-# 1. 알고리즘 시간복잡도
 
 ## 자료구조와 알고리즘 성능
 

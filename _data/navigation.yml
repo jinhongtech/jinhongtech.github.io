@@ -13,6 +13,8 @@ sidebar-category:
         url: "/CS"
       - title: "코딩테스트"
         url: "/CT"
+      - title: "네트워크"
+        url: "/NW"
 
 
   # - title: "About"

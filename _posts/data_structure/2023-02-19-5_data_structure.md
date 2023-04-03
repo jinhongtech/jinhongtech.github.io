@@ -1,11 +1,10 @@
 ---
 layout: single
-title: "연결리스트(Linked List)"
+title: "05.연결리스트(Linked List)"
 categories: 
   - DA
 ---
 
-# 5. 연결리스트(Linked List)
 
 ## 한방향 연결리스트(Singly Linked List)
 
@@ -16,7 +15,7 @@ categories:
     - 탐색(search)
     - 제너레이터(generator)
 
-<img src="/images/linkedlist1.png" width="90%" height="90%">
+<img src="/images/data_structure/5.linkedlist1.png" width="90%" height="90%">
 
 
 ```python
@@ -36,7 +35,7 @@ b.next = c
 			
 ```
 
-<img src="/images/linkedlist2.png" width="100%" height="100%">
+<img src="/images/data_structure/5.linkedlist2.png" width="100%" height="100%">
 
 
 ```python
@@ -118,24 +117,25 @@ class SinglyLinkedList:
 - pushBack, popBack → O(n) (tail 노드를 찾아야되기 때문에)
 - search → O(n) (최악의 경우 모든 노드를 찾아봐야함)
 
+
 ## 양방향 연결리스트(Doubly Linked List)
 
 - 한방향 연결리스트: tail node를 지울 때 tail node를 알고 있어도 tail node 직전에 있는 prev node를 알아야한다.(prev node의 링크가 더이상 tail node를 가리키면  안되기 때문 또한 tail node 를 알아도 prev node를 알 수 없기 때문에 head node부터 다시 찾아야함)
 - 노드(key값 + next link + prev link)
 - 한방향 연결리스트에 비해서 한 노드에 사용되는 메모리가 증가하지만 특정 위치의 노드를 삭제하거나 추가할 때 시간복잡도가 줄어든다.
 
-<img src="/images/linkedlist3.png" width="100%" height="100%">
+<img src="/images/data_structure/5.linkedlist3.png" width="100%" height="100%">
 
 ### 원형 양방향 연결리스트(Circularly Doubly Linked List)
 
 - 기존 양방향 연결리스트에 비해 삽입 삭제 연산들이 간단해진다.
 
-<img src="/images/linkedlist4.png" width="100%" height="100%">
+<img src="/images/data_structure/5.linkedlist4.png" width="100%" height="100%">
 
 
 - 원형연결리스트의 시작을 표기하기 위해 빈리스트 dummy node를 사용한다.
     
-<img src="/images/linkedlist5.png" width="100%" height="100%">
+<img src="/images/data_structure/5.linkedlist5.png" width="100%" height="100%">
 
     
 
@@ -218,7 +218,7 @@ class DoublkyLinkedList:
 
 - splice 연산 그림
 
-<img src="/images/linkedlist6.png" width="100%" height="100%">
+<img src="/images/data_structure/5.linkedlist6.png" width="100%" height="100%">
 
 
 - 시간복잡도

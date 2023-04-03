@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "순차적 자료구조: 배열과 리스트"
+title: "02.순차적 자료구조: 배열과 리스트"
 categories: 
   - DA
 ---

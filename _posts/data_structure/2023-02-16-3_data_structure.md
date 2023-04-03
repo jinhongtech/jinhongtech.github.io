@@ -1,15 +1,14 @@
 ---
 layout: single
-title: "스택(Stack)"
+title: "03.스택(Stack)"
 categories: 
   - DA
 ---
 
-# 3. 스택(Stack)
 
 - LIFO(Last In First Out)
 
-<img src="/images/stack1.png" width="80%" height="80%">
+<img src="/images/data_structure/3.stack1.png" width="80%" height="80%">
 
 - 필수연산
     - 삽입(push)

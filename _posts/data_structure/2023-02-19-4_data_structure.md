@@ -1,18 +1,17 @@
 ---
 layout: single
-title: "큐(Queue)"
+title: "04.큐(Queue)"
 categories: 
   - DA
 ---
 
-# 4. 큐(Queue)
 
 - FIFO(First In First Out) 규칙의 순차적 자료구조
 - 필수 연산
     - 삽입(enqueue)
     - 삭제(dequeue)
 
-<img src="/images/queue1.png" width="100%" height="100%">
+<img src="/images/data_structure/4.queue1.png" width="100%" height="100%">
 
 ```python
 class Queue:
