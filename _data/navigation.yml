@@ -9,14 +9,21 @@ main:
 sidebar-category:
   - title: "Category"
     children:
-      - title: "자료구조 알고리즘"
-        url: "/DA"
-      - title: "컴퓨터 구조"
+      - title: "CS"
         url: "/CS"
-      - title: "코딩테스트"
-        url: "/CT"
+      - title: "컴퓨터 구조"
+        url: "/ComputerArchitecture"
       - title: "네트워크"
-        url: "/NW"
+        url: "/Network"
+      - title: "자료구조"
+        url: "/DataStructure"
+      - title: "알고리즘"
+        url: "/Algorithm"
+      - title: "프로그래밍"
+        url: "/Programming"
+      - title: "코딩테스트"
+        url: "/CodingTest"
+
 
 
   # - title: "About"

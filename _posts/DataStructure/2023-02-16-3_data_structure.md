@@ -2,7 +2,8 @@
 layout: single
 title: "03.스택(Stack)"
 categories: 
-  - DA
+  - DataStructure
+  - CS
 ---
 
 

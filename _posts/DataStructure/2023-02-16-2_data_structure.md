@@ -2,7 +2,8 @@
 layout: single
 title: "02.순차적 자료구조: 배열과 리스트"
 categories: 
-  - DA
+  - DataStructure
+  - CS
 ---
 
 # 2. 순차적 자료구조: 배열과 리스트

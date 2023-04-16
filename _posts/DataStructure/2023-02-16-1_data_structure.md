@@ -2,7 +2,8 @@
 layout: single
 title: "01.알고리즘 시간복잡도"
 categories: 
-  - DA
+  - DataStructure
+  - CS
 ---
 
 

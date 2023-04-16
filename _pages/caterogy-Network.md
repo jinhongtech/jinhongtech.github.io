@@ -1,7 +1,7 @@
 ---
-title: "컴퓨터 과학"
+title: "네트워크"
 layout: archive
-permalink: /CS
+permalink: /Network
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.CS %}
+{% assign posts = site.categories.Network %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

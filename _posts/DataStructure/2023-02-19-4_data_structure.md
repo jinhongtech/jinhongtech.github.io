@@ -2,7 +2,8 @@
 layout: single
 title: "04.큐(Queue)"
 categories: 
-  - DA
+  - DataStructure
+  - CS
 ---
 
 

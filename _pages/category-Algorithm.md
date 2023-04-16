@@ -1,7 +1,7 @@
 ---
-title: "컴퓨터 과학"
+title: "알고리즘"
 layout: archive
-permalink: /CS
+permalink: /Algorithm
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.CS %}
+{% assign posts = site.categories.Algorithm %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

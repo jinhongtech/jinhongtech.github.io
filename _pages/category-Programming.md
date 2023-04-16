@@ -1,7 +1,7 @@
 ---
-title: "자료구조 알고리즘"
+title: "프로그래밍"
 layout: archive
-permalink: /DA
+permalink: /Programming
 author_profile: true
 sidebar_main: true
 sidebar:
@@ -9,5 +9,5 @@ sidebar:
 ---
 
 
-{% assign posts = site.categories.DA %}
+{% assign posts = site.categories.Programming %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

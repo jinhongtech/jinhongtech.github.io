@@ -2,7 +2,8 @@
 layout: single
 title: "05.연결리스트(Linked List)"
 categories: 
-  - DA
+  - DataStructure
+  - CS
 ---
 
 
