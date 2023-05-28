@@ -5,6 +5,8 @@ title: "[컴퓨터 구조] L01.Course Introduction"
 categories:
   - ComputerArchitecture
   - CS
+tags:
+  - cs61c_"Great Ideas in Computer Architecture"
 ---
 
 ## Great Ideas in Computer Architecture

@@ -5,6 +5,8 @@ title: "[컴퓨터 구조] L02.Number Representation"
 categories:
   - ComputerArchitecture
   - CS
+tags:
+  - cs61c_"Great Ideas in Computer Architecture"
 ---
 
 ## Bits can be anything

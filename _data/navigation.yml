@@ -1,9 +1,11 @@
 # main links
 main:
   - title: "Posts"
-    url: "/category"
-  - title: "Categories"
-    url: "/categories"
+    url: "/posts"
+  - title: "Tags"
+    url: "/tags"
+  - title: "Portfolio"
+    url: "/portfolio"
   - title: "Search"
     url: "/search"
 sidebar-category:
